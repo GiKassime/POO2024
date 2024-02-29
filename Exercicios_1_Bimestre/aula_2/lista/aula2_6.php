@@ -8,7 +8,6 @@ if(is_numeric($numero1) && is_numeric($numero2)){
     
     for($i= 0 ;$i < $numero1 ;$i++){
         $multiplicador += $numero2;
-        var_dump($multiplicador);
        
     }
     echo "\n $numero1 X $numero2 = $multiplicador";

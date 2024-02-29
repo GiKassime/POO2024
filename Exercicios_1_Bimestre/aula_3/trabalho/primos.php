@@ -1,14 +1,20 @@
 <?php
 
 function numeroPrimo(int $num) : bool{
-    if(($num%2 != 0 || $num == 2) && $num > 1)//o único número primo par é o 2  
-    return true;      
-    else
-        return false;
+    $divisor = 0;
+    for ($i=1; $i <= $num; $i++) { 
+        if($num%$i==0){
+            $divisor++;
+        }
+    }
+    if($divisor == 2)
+        return true;      
+    
+    return false;
     
 }
 function menu(){
-    echo "*********PRIMO OU NÃO?**********\n";
+    echo "*********PRIMO OU NÃO?**********\n";//menu
 }
 menu();
 do{
