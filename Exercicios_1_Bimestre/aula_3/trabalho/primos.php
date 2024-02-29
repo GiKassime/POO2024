@@ -7,10 +7,9 @@ function numeroPrimo(int $num) : bool{
             $divisor++;
         }
     }
-    if($divisor == 2)
-        return true;      
+    return($divisor == 2);      
     
-    return false;
+
     
 }
 function menu(){
