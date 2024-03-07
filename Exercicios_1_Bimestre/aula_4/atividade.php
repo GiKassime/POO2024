@@ -19,4 +19,7 @@ while($num!= 0){
         print("\n$num não é primo!\n");
     }
 }
-print_r($vetor);
+print("\nEsses são todos os números primos:\n");
+foreach ($vetor as $value) {
+    print("---------> $value <---------\n");
+}
