@@ -47,16 +47,23 @@ function calculaFuncao($vetor){
     }
     return $vetor1;
 }
-function mostraArray($vetor){
+function mostraArray($vetor,$detalhe = ""){
+    $i = 0;
     foreach ($vetor as $value) {
-        print(" ".$value.",");
+        $i++;
+        if(count($vetor) > $i){
+            print(number_format($value, 2, ',').$detalhe.", ");
+        }else{
+            print($value.$detalhe.".");
+        }
+       
     }
 }
 $vetor1 = lerElementos($vetor = array(), 5);
 
 print("\n\nFahrenheit de cada valor lido para o vetor inicial em Celsius\n");
 $vetor2 = calculaFahrenheit($vetor1);
-mostraArray($vetor2);
+mostraArray($vetor2,"°");
 print("\n\nRecebe o fatorial do número lido caso ele seja maior ou igual a 1, ou 0 caso contrário.\n");
 $vetor3 = calculaFatorial($vetor1);
 mostraArray($vetor3);
