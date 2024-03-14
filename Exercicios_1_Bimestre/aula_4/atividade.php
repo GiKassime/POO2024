@@ -1,12 +1,13 @@
 <?php
-function numeroPrimo(int $num) : bool{
-    $divisor = 0;
-    for ($i=1; $i <= $num; $i++) { 
+function numeroPrimo(int $num){
+    $raiz = sqrt($num);
+    for ($i=2; $i < $raiz; $i++) { 
         if($num%$i==0){
-            $divisor++;
+            return false;
         }
+        return true;
     }
-    return($divisor == 2);          
+   
 }
 $vetor = array();
 $num = 1;
