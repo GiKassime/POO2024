@@ -54,7 +54,7 @@ function mostraArray($vetor,$detalhe = ""){
         if(count($vetor) > $i){
             print(number_format($value, 2, ',').$detalhe.", ");
         }else{
-            print($value.$detalhe.".");
+            print(number_format($value, 2, ',').$detalhe.".");
         }
        
     }
