@@ -27,4 +27,3 @@ print_r($vetorA);
 $vetorB = array();
 
 
-
