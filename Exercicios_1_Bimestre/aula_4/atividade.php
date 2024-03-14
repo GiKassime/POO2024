@@ -22,4 +22,4 @@ while($num!= 0){
 print("\nEsses são todos os números primos:\n");
 foreach ($vetor as $value) {
     print("---------> $value <---------\n");
-}~
+}
