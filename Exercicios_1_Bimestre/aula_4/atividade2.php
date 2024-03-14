@@ -52,9 +52,9 @@ function mostraArray($vetor,$detalhe = ""){
     foreach ($vetor as $value) {
         $i++;
         if(count($vetor) > $i){
-            print(number_format($value, 2, ',').$detalhe.", ");
+            print(number_format($value, 1, ',').$detalhe.", ");
         }else{
-            print(number_format($value, 2, ',').$detalhe.".");
+            print(number_format($value, 1, ',').$detalhe.".");
         }
        
     }
